@@ -11,7 +11,7 @@ exports.listar = (req, res) => {
 }
 
 exports.listarId = (req, res) => {
-    const IdUrl = req.params.id;
+    const IdUrl = parseInt(req.params.id);    
     modelBackSer.listarUsuarioId(IdUrl, (resultado) => {
         res.json(resultado);
     })
