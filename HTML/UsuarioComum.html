@@ -42,6 +42,7 @@
     <script src="../JavaScript/FrontEnd/View/apagarTexto.js" defer></script>
 
     <!--Controller-->
+    <script src="../JavaScript/FrontEnd/Controller/urlBase.js" defer></script>
     <script src="../JavaScript/FrontEnd/Controller/acaoOlho.js" defer></script>
     <script src="../JavaScript/FrontEnd/Controller/FaleConoscoJs.js" defer></script>
     <script src="../JavaScript/FrontEnd/Controller/EditarUsuarioComum.js" defer></script>
@@ -155,8 +156,7 @@
                                         <img src="../image/hidden.png" alt="Ocutar Senha" class="EyeFechado esconder"
                                             id="ImgOlhoFechadoS">
                                         <input type="password" class="form-control Cadastro Campos placeSenha"
-                                            id="TxtSenha" required
-                                            placeholder="Não digite para senha atual">
+                                            id="TxtSenha" required placeholder="Não digite para senha atual">
                                     </div>
                                     <label for="TxtSenha" class="Descricao">
                                         <p>A senha precisa conter pelo menos 1 caractere especial (@ ou _),
@@ -181,8 +181,7 @@
                                     id="BtnEditar"><b>Editar</b></button>
                             </div>
                             <div class="col-lg-3 position-relative locBotaoLogin">
-                                <button type="" class="btn btn-primary BotaoUsuario"
-                                    id="BtnSair"><b>Sair</b></button>
+                                <button type="" class="btn btn-primary BotaoUsuario" id="BtnSair"><b>Sair</b></button>
                             </div>
                         </div>
                     </div>
@@ -252,7 +251,8 @@
                                     </div>
 
                                     <div class="col-lg-6 position-relative">
-                                        <img src="../image/title.png" alt="Icon Titulo" style="width: 12px; height: 12px;">
+                                        <img src="../image/title.png" alt="Icon Titulo"
+                                            style="width: 12px; height: 12px;">
                                         <label for="validationTooltip01" class="form-label"><b>Assunto</b></label>
                                         <input type="text" class="form-control" placeholder="Titulo do Email"
                                             id="TxtAssunto">
