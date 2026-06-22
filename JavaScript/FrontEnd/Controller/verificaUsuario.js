@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnUsuario = document.getElementById("btnContaUsuario");
     const btnAdmin = document.getElementById("btnContaAdmin");
     
-    if (!btnLoginUsuario || !btnUsuario || !btnLoginAdmin || !btnAdmin){
+    if (!btnLoginUsuario || !btnUsuario || !btnAdmin){
         return;
     }
 
