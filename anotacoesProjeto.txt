@@ -6,10 +6,11 @@ Tarefas totais:
 - token ADM: João (ok) 
 - token Usuario: Otavio (ok) 
 - Adicionar o usuário para as outras telas quando logar: Otávio (ok)
+- Mandar para o gitHub para alteração: OK 
+
 - Fazer a verificação se o usuario é adm ou comum no back-end do Login: Otávio (Parcialmente feito)
-- Colocar os fetchs com o direcionamento do backend do link
-- Mandar para o gitHub para alteração 
-- Colocar a função sair do usuário comum e fazer login com adm 
+- Colocar os fetchs com o direcionamento do backend do link:
+- Colocar a função sair do usuário comum e fazer login com adm: 
 
 * Ideias:
 - Ter a tela de usuarios normal, e o adm alterar outros usuários para adm, não ter uma tela de criação de adm
