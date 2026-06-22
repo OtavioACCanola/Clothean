@@ -10,7 +10,8 @@ Tarefas totais:
 
 - Fazer a verificação se o usuario é adm ou comum no back-end do Login: Otávio (Parcialmente feito)
 - Colocar os fetchs com o direcionamento do backend do link:
-- Colocar a função sair do usuário comum e fazer login com adm: 
+- Colocar a função sair do usuário comum: OK
+- fazer login com adm:  
 
 * Ideias:
 - Ter a tela de usuarios normal, e o adm alterar outros usuários para adm, não ter uma tela de criação de adm
