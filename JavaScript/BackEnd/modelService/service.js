@@ -9,6 +9,12 @@ exports.listar = (callback) => { // req: O que o cliente pediu, como parâmetros
     }); // Variável que contém o array gerado pela função
 }
 
+exports.listarUsuarioEmail = (id, callback) => { // req: O que o cliente pediu, como parâmetros, header e body ; res: O que o servidor vai responder 
+    repositories.buscaUsuarioComumEmail(id, (resultado) => {
+        callback(resultado)
+    }); // Variável que contém o array gerado pela função
+}
+
 exports.cadastrar = (usuario, callback) => {
     const saltRounds = 10;
 

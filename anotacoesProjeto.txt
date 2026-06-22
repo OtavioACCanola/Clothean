@@ -12,6 +12,7 @@ Tarefas totais:
 - Colocar os fetchs com o direcionamento do backend do link: ok
 - Colocar a função sair do usuário comum: OK
 - fazer login com adm:  ok
+- Mudar o consultar para consultar o email que está no token
 
 * Ideias:
 - Ter a tela de usuarios normal, e o adm alterar outros usuários para adm, não ter uma tela de criação de adm

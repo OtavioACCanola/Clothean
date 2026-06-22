@@ -16,13 +16,13 @@ function consultaUsuario() {
 
     // linhaAluno.textContent = ""; // Limpa tudo antes de adicionar os alunos do json
 
-    obterUsuarios().then(function (listaUsuarios) { // Vai pegar a lista Json obtida pelo método da model
+    obterUsuariosEmail().then(function (listaUsuario) { // Vai pegar a lista Json obtida pelo método da model
 
         if (listaUsuarios.length === 0) {
             mensagemErro("Não tem nenhum Usuario cadastrado no servidor ainda!");
         }
         else {
-            listaUsuarios.forEach(function (usuario) { // Percorre a lista obtida da Model
+            listaUsuario.forEach(function (usuario) { // Percorre a lista obtida da Model
                 btnEditarUsu.dataset.id = usuario.id,
                 btnExcluirUsu.dataset.id = usuario.id,
                 txtNome.value = usuario.nome, 
