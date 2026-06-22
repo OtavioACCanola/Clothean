@@ -55,7 +55,7 @@ exports.editarUsuario = (usuario, callback) => {
     });
 };
 
-exports.buscaUsuarioComumEmail = (id, callback) => {
+exports.buscaUsuarioComumId= (id, callback) => {
     const sql = "SELECT * FROM tbl_Usuario WHERE id = ?";
 
     conexao.query(sql, [id], (erro, resultado) => {

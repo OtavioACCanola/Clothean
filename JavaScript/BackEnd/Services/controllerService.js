@@ -12,7 +12,7 @@ exports.listar = (req, res) => {
 
 exports.listarId = (req, res) => {
     const IdUrl = req.params.id;
-    modelBackSer.listarUsuarioEmail(id, (resultado) => {
+    modelBackSer.listarUsuarioId(IdUrl, (resultado) => {
         res.json(resultado);
     })
 }
