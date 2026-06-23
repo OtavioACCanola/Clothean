@@ -71,7 +71,8 @@ exports.buscaUsuarioComumId= (id, callback) => {
     });
 };
 
-exports.buscaEmail = (usuario, callback) => {
+exports.buscaEmail = (email, callback) => {
+
     const sql = "SELECT * FROM tbl_Usuario WHERE email = ?";
 
     conexao.query(sql, [email], (erro, resultado) => {
