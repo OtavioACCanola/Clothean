@@ -19,8 +19,8 @@ function consultaUsuario() {
     const usuarioLogado = jwt_decode(token)
     const id = usuarioLogado.id
 
-    obterUsuariosEmail(id).then(function (listaUsuario) { // Vai pegar a lista Json obtida pelo método da model
-
+    obterUsuariosEmail(id).then((listaUsuario) => { // Vai pegar a lista Json obtida pelo método da model
+        console.log(listaUsuario)
         if (listaUsuario.length === 0) {
             mensagemErro("Não tem nenhum Usuario cadastrado no servidor ainda!");
         }
