@@ -20,7 +20,6 @@ function consultaUsuario() {
     const id = usuarioLogado.id
 
     obterUsuariosEmail(id).then((Usuario) => { // Vai pegar a lista Json obtida pelo método da model
-        console.log(Usuario)
         if (Usuario=== null) {
             mensagemErro("Não tem nenhum Usuario cadastrado no servidor ainda!");
         }
