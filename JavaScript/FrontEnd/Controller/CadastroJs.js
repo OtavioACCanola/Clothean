@@ -77,7 +77,7 @@ function cadastrar(event) {
                     clearCadastro();
 
                     setTimeout(() => {
-                        window.location.href = "./Index.html"
+                        window.location.href = "./index.html"
                     }, 2000);
                 })
                 .catch(erro => {
