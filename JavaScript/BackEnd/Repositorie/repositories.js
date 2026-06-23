@@ -74,7 +74,7 @@ exports.buscaUsuarioComumId= (id, callback) => {
 exports.buscaEmail = (usuario, callback) => {
     const sql = "SELECT * FROM tbl_Usuario WHERE email = ?";
 
-    conexao.query(sql, [usuario.email], (erro, resultado) => {
+    conexao.query(sql, [email], (erro, resultado) => {
         if (erro) {
             throw erro;
         }
