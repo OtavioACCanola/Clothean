@@ -15,8 +15,11 @@ const txtSenha2 = document.getElementById("TxtSenha");
 function consultaUsuario() {
 
     // linhaAluno.textContent = ""; // Limpa tudo antes de adicionar os alunos do json
+    const token =  localStorage.getItem("usuarioToken")
+    const usuarioLogado = jwt_decode(token)
+    const id = usuarioLogado.id
 
-    obterUsuariosEmail().then(function (listaUsuario) { // Vai pegar a lista Json obtida pelo método da model
+    obterUsuariosEmail(id).then(function (listaUsuario) { // Vai pegar a lista Json obtida pelo método da model
 
         if (listaUsuarios.length === 0) {
             mensagemErro("Não tem nenhum Usuario cadastrado no servidor ainda!");
