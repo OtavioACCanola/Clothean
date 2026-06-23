@@ -21,7 +21,7 @@ function consultaUsuario() {
 
     obterUsuariosEmail(id).then(function (listaUsuario) { // Vai pegar a lista Json obtida pelo método da model
 
-        if (listaUsuarios.length === 0) {
+        if (listaUsuario.length === 0) {
             mensagemErro("Não tem nenhum Usuario cadastrado no servidor ainda!");
         }
         else {
