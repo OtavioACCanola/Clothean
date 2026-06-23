@@ -65,7 +65,7 @@ function cadastrar(event) {
             })
                 .then(response => {
                     if (!response.ok) {
-                        return response.json().json().then(erro => {
+                        return response.json().then(erro => {
                             throw new Error(erro.mensagem);
                         })
                     }
