@@ -47,7 +47,7 @@ exports.editarAdm = (usuario, callback) => {
 exports.loginUsuario = (usuario,  callback) => {
     console.log("--> 1. Dados recebidos no Service:", usuario);
 
-    repositories.buscaEmail(usuario.email, (usuarioEncontrado) => {
+    repositories.buscaEmail(usuario, (usuarioEncontrado) => {
         console.log("--> 2. Retorno do Banco de Dados:", usuarioEncontrado);
 
         if (!usuarioEncontrado) {
