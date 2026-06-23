@@ -15,7 +15,7 @@ const txtSenha2 = document.getElementById("TxtSenha");
 function consultaUsuario() {
 
     // linhaAluno.textContent = ""; // Limpa tudo antes de adicionar os alunos do json
-    const token =  localStorage.getItem("usuarioToken")
+    const token =  localStorage.getItem("token")
     const usuarioLogado = jwt_decode(token)
     const id = usuarioLogado.id
 
