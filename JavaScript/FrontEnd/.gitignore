@@ -1,5 +1,6 @@
 node_modules/
-.env
+config.js
+JavaScript/FrontEnd/Controller/config.js
 desktop.ini
 desktop.ini/
 /desktop.ini

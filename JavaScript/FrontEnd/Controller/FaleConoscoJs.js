@@ -47,7 +47,7 @@ function clearFaleConosco() {
 // =-=-=-=--=-=-=-=-=-=-=-=-=-=-=-= EMAILJS =-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=
 
 document.addEventListener("DOMContentLoaded", function () {
-    emailjs.init(import.meta.env.VITE_EMAILJS_INIT);
+    emailjs.init(CONFIG.EMAILJS_INIT);
 
     if (enviar) {
         enviar.addEventListener("click", function (event) {
@@ -71,8 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     email: document.getElementById("TxtEmailModal").value,
                     message: document.getElementById("TxtMensagemModal").value
                 };
-                const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-                const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+                const serviceId = CONFIG.EMAILJS_SERVICE_ID;
+                const templateId = CONFIG.EMAILJS_TEMPLATE_ID;
 
                 emailjs.send(serviceId, templateId, formData);
                 mensagemSucesso("Mensagem enviada");
