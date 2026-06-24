@@ -12,7 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btnFaleConosco && ModalConteiner) {
         btnFaleConosco.addEventListener("click", (e) => {
             e.preventDefault();
-            aparecerModal(ModalConteiner);
+            const offcanvasEl = document.getElementById("offcanvasWithBothOptions");
+            const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
+            offcanvas.hide();
+
+            // Depois abre o modal
+            setTimeout(() => {
+                aparecerModal(ModalConteiner);
+            });
         });
     };
 
