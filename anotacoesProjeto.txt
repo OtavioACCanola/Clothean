@@ -25,5 +25,6 @@ Tarefas totais:
 - Colocar uma validação de email repetido no cadastrar: 
 - Colocar uma validação de email repetido no editar adm: 
 - Colocar uma validação de email repetido no editar usuario: 
+- Quando o adm excluir a conta dele, sair da tela de adm
 
 
