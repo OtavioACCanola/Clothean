@@ -1,3 +1,5 @@
+let dadosOriginaisUsuario = null;
+
 function consultaUsuarios() {
 
     const linhaUsuario = document.getElementById("CorpoTabela"); // Pega o corpo da tabela para dar mostrar os alunos
@@ -15,7 +17,7 @@ function consultaUsuarios() {
             listaUsuario.forEach(function (usuario) { // Percorre a lista obtida da Model
                 addInfoUsuario(usuario.id, usuario.nome, usuario.email, usuario.cpf, usuario.telefone, usuario.perfil) // Faz a linha para adicionar a tabela
             })
-             dadosOriginaisUsuario = {
+            dadosOriginaisUsuario = {
                 nome: Usuario.nome,
                 email: Usuario.email,
                 cpf: Usuario.cpf,

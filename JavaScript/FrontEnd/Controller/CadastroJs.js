@@ -48,7 +48,7 @@ function cadastrar(event) {
         else if (validarTelefone(strTelefone) === false) {
             mensagemErro("O telefone não foi digitado corretamente, verifique");
         }
-        else if (strNovoEmail === dadosOriginaisUsuario.email && strNovoCpf === dadosOriginaisUsuario.cpf && strNovoTelefone === dadosOriginaisUsuario.telefone) {
+        else if (strEmail === dadosOriginaisUsuario.email && strCpf === dadosOriginaisUsuario.cpf && strTelefone === dadosOriginaisUsuario.telefone) {
             mensagemErro("Dados já resgistrados no banco, verifique os dados novamente!");
         }
         else {
