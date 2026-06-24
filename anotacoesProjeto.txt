@@ -19,7 +19,11 @@ Tarefas totais:
 - Arrumar funções editar adm: ok
 - Colocar as chaves do emailJs no .env: 
 
-* Ideias:
-- Ter a tela de usuarios normal, e o adm alterar outros usuários para adm, não ter uma tela de criação de adm
-- Iniciar o banco e o back-end no servidor
+
+
+* Ideias Futuras:
+- Colocar uma validação de email repetido no cadastrar: 
+- Colocar uma validação de email repetido no editar adm: 
+- Colocar uma validação de email repetido no editar usuario: 
+
 

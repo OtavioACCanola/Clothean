@@ -29,9 +29,6 @@ function editarUsuarios() {
     else if (validarTelefone(txtNovoTelefone)) {
         mensagemErro("Telefone inválido, verifique!")
     }
-    else if (txtNovoNome === dadosOriginaisUsuario.nome && txtNovoEmail === dadosOriginaisUsuario.email && txtNovoCpf === dadosOriginaisUsuario.cpf && txtNovoTelefone === dadosOriginaisUsuario.telefone) {
-        mensagemErro("Dados iguais aos antigos, não é necessário editar!");
-    }
     else {
         const id = btnEditarModal.dataset.idUsuarioAtual;
         console.log(id)
