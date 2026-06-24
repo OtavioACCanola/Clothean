@@ -1,6 +1,8 @@
 
 // Colocar as chaves no arquivo .env (Pesquisar)
 // Consertar clear() quando enviar mensagem
+import { CONFIG } from "./config";
+
 const enviar = document.getElementById("enviar")
 const form = document.getElementById("formularioContato")
 
