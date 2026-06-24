@@ -48,6 +48,9 @@ function cadastrar(event) {
         else if (validarTelefone(strTelefone) === false) {
             mensagemErro("O telefone não foi digitado corretamente, verifique");
         }
+        else if (strNovoEmail === dadosOriginaisUsuario.email && strNovoCpf === dadosOriginaisUsuario.cpf && strNovoTelefone === dadosOriginaisUsuario.telefone) {
+            mensagemErro("Dados já resgistrados no banco, verifique os dados novamente!");
+        }
         else {
             fetch(`${baseUrl}usuarios`, {
                 method: "POST",
@@ -66,7 +69,7 @@ function cadastrar(event) {
                 .then(response => {
                     if (!response.ok) {
                         return response.json().then(erro => {
-                            throw new Error(erro.mensagem);
+                            throw mensagemErro(erro.mensagem);
                         })
                     }
                     return response.json();
@@ -82,7 +85,7 @@ function cadastrar(event) {
                 })
                 .catch(erro => {
                     console.error("Erro na requisição de cadastro:", erro);
-                mensagemErro(erro.message || "Não foi possível conectar ao servidor.");
+                    mensagemErro(erro.message || "Não foi possível conectar ao servidor.");
                 });
 
         }

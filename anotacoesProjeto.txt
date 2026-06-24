@@ -13,10 +13,11 @@ Tarefas totais:
 - fazer login com adm:  ok
 - Mudar o consultar para consultar o email que está no token: ok
 
-- Mudar apenas o header do reserva.html quando logado
-- Colocar uma validação de email repetido no cadastrar
-- Colocar a mascara no editar do adm
-- Arrumar funções editar adm
+- Mudar apenas o header do reserva.html quando logado: 
+- Colocar uma validação de email repetido no cadastrar: ok
+- Colocar a mascara no editar do adm: ok
+- Arrumar funções editar adm: ok
+- Colocar as chaves do emailJs no .env: 
 
 * Ideias:
 - Ter a tela de usuarios normal, e o adm alterar outros usuários para adm, não ter uma tela de criação de adm
