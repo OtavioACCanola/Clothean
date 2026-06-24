@@ -7,12 +7,16 @@ Tarefas totais:
 - token Usuario: Otavio (ok) 
 - Adicionar o usuário para as outras telas quando logar: Otávio (ok)
 - Mandar para o gitHub para alteração: OK 
-
 - Fazer a verificação se o usuario é adm ou comum no back-end do Login: ok
 - Colocar os fetchs com o direcionamento do backend do link: ok
 - Colocar a função sair do usuário comum: OK
 - fazer login com adm:  ok
-- Mudar o consultar para consultar o email que está no token
+- Mudar o consultar para consultar o email que está no token: ok
+
+- Mudar apenas o header do reserva.html quando logado
+- Colocar uma validação de email repetido no cadastrar
+- Colocar a mascara no editar do adm
+- Arrumar funções editar adm
 
 * Ideias:
 - Ter a tela de usuarios normal, e o adm alterar outros usuários para adm, não ter uma tela de criação de adm
