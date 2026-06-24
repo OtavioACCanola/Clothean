@@ -42,7 +42,7 @@
     <!--Controller-->
     <script src="../JavaScript/FrontEnd/Controller/urlBase.js" defer></script>
     <script src="../JavaScript/FrontEnd/Controller/Login.js" defer></script>
-    <script src="../JavaScript/FrontEnd/Controller/FaleConoscoJs.js" defer></script>
+    <script type="module" src="../JavaScript/FrontEnd/Controller/FaleConoscoJs.js" defer></script>
     <script src="../JavaScript/FrontEnd/Controller/verificaUsuario.js" defer></script>
 </head>
 
@@ -64,10 +64,10 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar">
-                    <li class="nav-item"><a class="nav-link" href="./index.html#Serviços">Como funcionamos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./index.html#sobre">Sobre nós</a></li>
-                    <li class="nav-item"><a class="nav-link" id="btnFaleConosco">Fale
-                            Conosco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Serviços">Como funcionamos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nós</a></li>
+                    <li class="nav-item"><a class="nav-link" id="btnFaleConosco" style="cursor:pointer;">Fale Conosco</a>
+                    </li>
                     <li class="nav-item mt-3">
                         <a href="./loginUsuario.html">
                             <button type="button" class="btn btn-outline-primary btnUsuario" id="btnLoginUsuario">Login
